@@ -24,9 +24,7 @@ class VerificationView extends StatelessWidget {
                 child: CustomElevetedboutton(
                   title: "Next",
                   width: double.infinity,
-                  onPressed: () {
-                    // Navigate to Success View
-                  },
+                  onPressed: () {},
                 ),
               ),
               SizedBox(height: 40.h),

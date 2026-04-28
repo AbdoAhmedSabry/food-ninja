@@ -14,7 +14,6 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBody: true,
-      // backgroundColor: AppColors.secondary,
       body: Container(
         width: double.infinity,
         height: double.infinity,
@@ -22,11 +21,7 @@ class HomePage extends StatelessWidget {
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [
-              Colors.black,
-              // AppColors.secondary,
-              const Color(0xFF23C87C).withOpacity(0.6),
-            ],
+            colors: [Colors.black, const Color(0xFF23C87C).withOpacity(0.6)],
           ),
         ),
 

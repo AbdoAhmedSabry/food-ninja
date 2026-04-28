@@ -19,11 +19,7 @@ class Productpage extends StatelessWidget {
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [
-              Colors.black,
-              // AppColors.secondary,
-              const Color(0xFF23C87C).withOpacity(0.6),
-            ],
+            colors: [Colors.black, const Color(0xFF23C87C).withOpacity(0.6)],
           ),
         ),
 
