@@ -8,18 +8,29 @@ class CustomTextfield extends StatelessWidget {
     required this.prefix,
     this.height = 70,
     this.width = 327,
+    this.validator,
+    this.controller,
+    this.obscureText,
+    this.inputType,
   });
+  final TextEditingController? controller;
+  final String? Function(String?)? validator;
   final String hinttext;
   final Widget? prefix;
   final double height;
   final double width;
-
+  final bool? obscureText;
+  final TextInputType? inputType;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: height.h,
       width: width.w,
-      child: TextField(
+      child: TextFormField(
+        keyboardType: inputType,
+        obscureText: obscureText ?? false,
+        validator: validator,
+        controller: controller,
         decoration: InputDecoration(
           hintText: hinttext,
           hintStyle: TextStyle(color: Colors.white.withOpacity(0.4)),

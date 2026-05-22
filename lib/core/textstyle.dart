@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:foodninga/core/colors.dart'; // تأكد إن مسار الملف ده صح عندك
+import 'package:foodninga/core/colors.dart'; // Ensure this path is correct
 
 class AppTextStyles {
-  // 1. العناوين الكبيرة الرئيسية
+  // 1. Main Large Headings
   static TextStyle get font31BoldWhite => TextStyle(
     fontFamily: 'Poppins',
-    fontSize: 31.sp, // إضافة .sp
+    fontSize: 31.sp, // add .sp
     fontWeight: FontWeight.bold,
     color: Colors.white,
     height: 1.3,
   );
 
-  // 2. عناوين الأقسام والأسماء البارزة
+  // 2. Section Headings and Prominent Names
   static TextStyle get font20BoldWhite => TextStyle(
     fontFamily: 'Poppins',
     fontSize: 20.sp,
@@ -20,7 +20,7 @@ class AppTextStyles {
     color: Colors.white,
   );
 
-  // 3. أسماء الوجبات في الكروت أو العناوين الفرعية
+  // 3. Meal Names in Cards or Subheadings
   static TextStyle get font16BoldWhite => TextStyle(
     fontFamily: 'Poppins',
     fontSize: 16.sp,
@@ -28,15 +28,15 @@ class AppTextStyles {
     color: Colors.white,
   );
 
-  // 4. السعر المميز باللون الأخضر
+  // 4. Featured Price in Green
   static TextStyle get font16BoldGreen => TextStyle(
     fontFamily: 'Poppins',
     fontSize: 16.sp,
     fontWeight: FontWeight.bold,
-    color: AppColors.primary, // استدعاء اللون من ملف الكور
+    color: AppColors.primary, // Import color from core file
   );
 
-  // 5. النصوص العادية والوصف (Description)
+  // 5. Normal Texts and Description
   static TextStyle get font14NormalGrey => TextStyle(
     fontFamily: 'Poppins',
     fontSize: 14.sp,
@@ -45,7 +45,7 @@ class AppTextStyles {
     height: 1.5,
   );
 
-  // 6. نصوص الـ Hint داخل الـ TextFields
+  // 6. Hint Texts inside TextFields
   static TextStyle get font14MediumWhite24 => TextStyle(
     fontFamily: 'Poppins',
     fontSize: 14.sp,
@@ -53,7 +53,7 @@ class AppTextStyles {
     color: Colors.white24,
   );
 
-  // 7. نصوص الأزرار
+  // 7. Button Texts
   static TextStyle get font16BoldWhiteButton => TextStyle(
     fontFamily: 'Poppins',
     fontSize: 16.sp,
@@ -61,11 +61,11 @@ class AppTextStyles {
     color: Colors.white,
   );
 
-  // 8. العنوان الأخضر الكبير
+  // 8. Large Green Heading
   static TextStyle get font31BoldGreen => TextStyle(
     fontFamily: 'Poppins',
     fontSize: 31.sp,
     fontWeight: FontWeight.bold,
-    color: AppColors.primary, // استدعاء اللون من ملف الكور
+    color: AppColors.primary, // Import color from core file
   );
 }

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "71071026806",
+    "project_id": "food-ninja-6e037",
+    "storage_bucket": "food-ninja-6e037.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71071026806:android:d116dc91fc8cb9c5231957",
+        "android_client_info": {
+          "package_name": "com.example.foodninga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71071026806-srd155ch69e7amfcchd9aduspa1ictmt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_uzMyd0946-iYO0E8G0r-byd2ykpdcQo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71071026806-srd155ch69e7amfcchd9aduspa1ictmt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

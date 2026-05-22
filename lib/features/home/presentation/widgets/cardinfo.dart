@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:foodninga/core/textstyle.dart';
+import 'package:foodninga/core/shared/entities/product_entite.dart';
 import 'package:foodninga/features/home/presentation/pages/productpage.dart';
 
 class CardInfo extends StatelessWidget {
-  const CardInfo({super.key});
+  final ProductEntite product;
+  const CardInfo({super.key, required this.product});
 
   @override
   Widget build(BuildContext context) {
@@ -12,12 +14,14 @@ class CardInfo extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => Productpage()),
+          MaterialPageRoute(
+            builder: (context) => Productpage(product: product),
+          ),
         );
       },
       child: Container(
         width: 145.w,
-        padding: EdgeInsets.symmetric(horizontal: 16.0.w, vertical: 16.0.h),
+        padding: EdgeInsets.symmetric(horizontal: 8.0.w, vertical: 8.0.h),
         decoration: BoxDecoration(
           color: Colors.white.withOpacity(0.05),
           borderRadius: BorderRadius.circular(22.r),
@@ -36,30 +40,38 @@ class CardInfo extends StatelessWidget {
           ],
         ),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Center(
-              child: Image.asset(
-                "assets/images/image5.png",
+              child: Image.network(
+                product.imageurl,
                 height: 110.h,
                 fit: BoxFit.contain,
               ),
             ),
 
-            SizedBox(height: 14.h),
+            SizedBox(height: 6.h),
 
-            Text("Hamburger", style: AppTextStyles.font16BoldWhite),
+            Text(
+              product.name,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: AppTextStyles.font16BoldWhite,
+            ),
 
             SizedBox(height: 4.h),
 
             Text(
-              "Veggie Burger",
-              style: AppTextStyles.font14MediumWhite24.copyWith(
+              product.descreption,
+              maxLines: 2,
+
+              overflow: TextOverflow.ellipsis,
+              style: AppTextStyles.font14NormalGrey.copyWith(
                 color: Colors.white.withOpacity(0.5),
               ),
             ),
 
-            SizedBox(height: 12.h),
+            SizedBox(height: 6.h),
 
             Row(
               children: [
